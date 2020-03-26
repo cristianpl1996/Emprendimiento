@@ -1,0 +1,16 @@
+.cont {
+    margin-left: 150px;
+}
+
+
+@media (max-width: 800px) {
+    .cont {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cont {
+        margin-left: 0px;
+    }
+}

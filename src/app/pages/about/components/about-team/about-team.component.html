@@ -1,0 +1,42 @@
+<!-- ./Team -->
+<section class="section bg-light">
+  <div class="container bring-to-front pt-0 pb-5">
+    <div class="section-heading text-center">
+      <h2>Conoce a nuestro equipo</h2>
+      <p class="lead text-secondary">
+        Estas personas increíbles han hecho posible realizar este proyecto.
+      </p>
+    </div>
+
+    <swiper [config]="config" class="swiper-container pb-5">
+      <div class="swiper-slide" *ngFor="let member of team; let i = index">
+        <div class="card shadow">
+          <div class="container-fluid py-0">
+            <div class="row">
+              <div
+                class="col-md-5 py-9 py-sm-7 blanket blanket-dark alpha-2 image-background cover center-top"
+                [style.background-image]="
+                  'url(assets/img/avatar/team/' + (i + 1) + '.jpg)'
+                "
+              ></div>
+              <div class="col-md-7">
+                <div class="p-4">
+                  <h6 class="bold font-l">{{ member.name }}</h6>
+                  <p class="small mt-0 text-primary text-uppercase mb-5" style="font-size: 12px;">
+                    {{ member.position }}
+                  </p>
+
+                  <blockquote class="team-quote pt-1">
+                    <i class="quote fas fa-quote-left"></i>
+                    <p class="italic pl-4">{{ member.quote }}</p>
+                  </blockquote>
+                  <hr class="w-25 mt-5" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </swiper>
+  </div>
+</section>

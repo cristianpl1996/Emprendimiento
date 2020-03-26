@@ -1,0 +1,39 @@
+<!-- ./Dashboard Included -->
+<section class="section bg-light edge top-left">
+  <div class="container bring-to-front">
+    <div class="section-heading text-center">
+      <h2>Una solución para tu necesidad.</h2>
+      <p class="lead">
+        Una herramienta poderosa que se encargará de mantener sus medicamentos en excelentes condiciones.
+      </p>
+    </div>
+    <div class="row align-items-center gap-y">
+      <div class="col-md-6 col-lg-5 text-center text-md-left">
+        <ul class="list-unstyled">
+          <li class="media d-block d-lg-flex" *ngFor="let feature of features; let i = index; let length = count">
+            <dc-feather [name]="feature.icon" [iconClass]="'stroke-primary'" class="mr-3 text-lg-right"></dc-feather>
+            <div class="media-body mt-3 mt-lg-0 text-center text-md-left">
+              <h5 class="bold text-darker">{{ feature.title }}</h5>
+              <p class="mt-0" [ngClass]="{ 'mb-5': i < length }">
+                {{ feature.description }}
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 col-lg-5 ml-md-auto">
+        <div class="shadow card">
+          <div class="card-body">
+            <p>
+              <span class="bold">Expiry App</span> provee varias herramientas para el cuidado de tus medicamentos 
+              tambien proporciona gestion de agendas como recordatorios y vencimiento de medicamentos.
+            </p>
+
+            <a [routerLink]="['/auth/login']" class="btn btn-primary btn-rounded mt-4">PRUEBALO AHORA MISMO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

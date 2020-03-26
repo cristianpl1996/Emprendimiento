@@ -1,0 +1,29 @@
+<dc-navbar-shell
+  [darkLinks]="darkLinks"
+  [useOnlyDarkLogo]="darkLinks ? true : useOnlyDarkLogo"
+>
+  <ul class="nav navbar-nav" [class.ml-auto]="isRightPositioned()">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/home']">INICIO</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/about']">ACERCA DE</a>
+    </li>
+  </ul>
+
+  <nav
+    class="nav navbar-nav justify-content-center mt-4 mt-md-0 flex-row"
+    [ngClass]="{ 'ml-md-auto': !isRightPositioned() }"
+  >
+    <a
+      class="btn btn-rounded btn-outline mr-3 px-3"
+      [routerLink]="['/auth/login']"
+    >
+      <fa-icon
+        [icon]="signInAlt"
+        class="d-none d-md-inline mr-md-0 mr-lg-2"
+      ></fa-icon>
+      <span class="d-md-none d-lg-inline">INICIAR SESION</span>
+    </a>
+  </nav>
+</dc-navbar-shell>

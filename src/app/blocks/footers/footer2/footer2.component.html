@@ -1,0 +1,39 @@
+<footer class="site-footer section">
+  <div class="container py-4">
+    <hr class="mt-5" />
+
+    <div class="text-center">
+      <nav class="nav social-icons justify-content-center mt-4">
+        <a href="#" class="mr-3 font-regular text-secondary"
+          ><fa-icon [icon]="fa.facebookF"></fa-icon
+        ></a>
+        <a href="#" class="mr-3 font-regular text-secondary"
+          ><fa-icon [icon]="fa.twitter"></fa-icon
+        ></a>
+        <a href="#" class="mr-3 font-regular text-secondary"
+          ><fa-icon [icon]="fa.instagram"></fa-icon
+        ></a>
+      </nav>
+
+      <p class="small copyright text-secondary">
+        © 2020 Expiry
+      </p>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-left">
+        <nav class="nav justify-content-center justify-content-md-start">
+          <a class="nav-item nav-link" [routerLink]="['/about']">Acerca de</a>
+        </nav>
+      </div>
+
+      <div class="col-md-6 text-center text-md-right">
+        <nav class="nav justify-content-center justify-content-md-end">
+          <a class="nav-item nav-link" [routerLink]="['/terms']"
+            >Politicas de Privacidad</a
+          >
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>

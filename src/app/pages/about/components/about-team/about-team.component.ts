@@ -14,12 +14,12 @@ export class AboutTeamComponent implements OnInit {
       quote: 'Estudiante Ingenieria Sistemas y Computación.'
     },
     {
-      name: 'Sara Yasmin Correa',
+      name: 'Sara Yasmin Rincon',
       position: 'Universidad Tecnologica de Pereira.',
       quote: 'Estudiante Ingenieria Sistemas y Computación.'
     },
     {
-      name: 'Jorge Luis Sanches',
+      name: 'Jorge Luis Sanchez',
       position: 'Universidad Tecnologica de Pereira.',
       quote: 'Estudiante Ingenieria Sistemas y Computación.'
     }

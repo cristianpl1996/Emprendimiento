@@ -5,6 +5,9 @@ import { SlidersModule } from '@app/blocks/sliders/sliders.module';
 import { TestimonialsModule } from '@app/blocks/testimonials/testimonials.module';
 import { ScreenshotsModule } from '@app/blocks/screenshots/screenshots.module';
 import { FootersModule } from '@app/blocks/footers/footers.module';
+import { UsualModule } from '@app/blocks/usual/usual.module';
+import { CtaModule } from '@app/blocks/cta/cta.module';
+import { NgxTypedJsModule } from 'ngx-typed-js';
 
 import { AppLandingRoutingModule } from './app-landing-routing.module';
 import { AppLandingComponent } from './components/app-landing/app-landing.component';
@@ -30,6 +33,9 @@ import { AppLandingHeadingComponent } from './components/app-landing-heading/app
     SlidersModule,
     TestimonialsModule,
     ScreenshotsModule,
+    UsualModule,
+    CtaModule,
+    NgxTypedJsModule,
     AppLandingRoutingModule
   ]
 })

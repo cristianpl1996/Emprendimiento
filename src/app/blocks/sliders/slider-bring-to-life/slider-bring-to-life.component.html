@@ -15,14 +15,16 @@
         <div class="rounded shadow-box bg-contrast mt-3">
           <div class="media align-items-center px-3">
             <dc-feather
-              [name]="'bar-chart'"
+              [name]="'smartphone'"
               [iconClass]="'stroke-primary'"
               [class]="'mr-3'"
             ></dc-feather>
             <div class="media-body my-3 pl-3 b-l">
-              <p class="bold text-primary my-0">Admin template included</p>
+              <p class="bold text-primary my-0">
+                Verificación del estado de medicamentos.
+              </p>
               <p class="my-0 text-secondary">
-                We've included a fully functional starter admin dashboard
+                Verifica el estado de tu medicamento y toma medidas de acuerdo a esta validación.
               </p>
             </div>
           </div>
@@ -31,69 +33,29 @@
         <div class="rounded shadow-box bg-contrast mt-3">
           <div class="media align-items-center px-3">
             <dc-feather
-              [name]="'smartphone'"
+              [name]="'clock'"
               [iconClass]="'stroke-primary'"
               [class]="'mr-3'"
             ></dc-feather>
             <div class="media-body my-3 pl-3 b-l">
-              <p class="bold text-primary my-0">
-                Powered with multiple starter apps
-              </p>
+              <p class="bold text-primary my-0">Gestion de agenda</p>
               <p class="my-0 text-secondary">
-                It's awesome you to have a nice feature to show up
+                Administra tu agenda de la manera como tú quieras y agrega tus recordatorios.
               </p>
-
-              <hr class="my-3" />
-              <nav
-                id="sw-nav-1"
-                class="nav nav-tabs tabs-clean border-bottom-0"
-              >
-                <a
-                  class="nav-item nav-link py-0 d-flex flex-column align-items-center border-bottom-0"
-                  href="javascript:void(0)"
-                  [class.active]="i === currentSlide"
-                  [class.pl-md-0]="i === 0"
-                  [attr.data-step]="i + 1"
-                  (click)="updateSlider(i)"
-                  *ngFor="let element of elements; let i = index"
-                >
-                  <dc-feather
-                    [name]="element.icon"
-                    [size]="24"
-                    class="mr-2"
-                  ></dc-feather>
-                </a>
-              </nav>
             </div>
           </div>
         </div>
+
+
       </div>
 
-      <div class="col-md-6 ml-md-auto text-center text-md-left">
-        <span class="rounded-pill shadow-box badge badge-info bold py-2 px-4"
-          >Simple and transparent</span
-        >
-
-        <h2 class="mt-3">Bring your application to life</h2>
-        <p class="text-secondary">
-          Dashcore includes an outstanding starter Admin Dashboard UI Interface.
-          With this feature you can start developing right away your web
-          application.
+      <div class="col-md-6 ml-md-auto text-center">
+        <h2 class="mt-3">Expiry App</h2>
+        <p class="text-justify">
+          Gracias a esta aplicación podras verificar el estado de los medicamentos que compraste sin saber
+          si todavía se encuentran en un estado optimo. También te ayuda a mantener los medicamentos en 
+          condiciones optimas para preservar su consumo y garantizar el ahorro de nuestros usuarios.
         </p>
-
-        <hr />
-        <swiper [index]="currentSlide" (indexChange)="onIndexChange($event)">
-          <div class="swiper-slide" *ngFor="let element of elements">
-            <figure class="shadow-box">
-              <img
-                [src]="'assets/img/screens/dash/' + element.img + '.png'"
-                alt=""
-                class="img-responsive rounded"
-              />
-            </figure>
-            <p class="small text-center text-danger">Clean inbox UI design</p>
-          </div>
-        </swiper>
       </div>
     </div>
   </div>
